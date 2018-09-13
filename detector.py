@@ -531,7 +531,7 @@ class LipMovementDetector:
 
         return frames, signal, points, index
 
-    def process_video_mouth(self, video_file=None, csvfile=None):
+    def process_video(self, video_file=None, csvfile=None):
         video = skvideo.io.vread(video_file)
 
         m_ratio = []
