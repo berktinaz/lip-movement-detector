@@ -267,7 +267,7 @@ class LipMovementDetector:
         return start_points, end_points, utterances
 
     @staticmethod
-    def read_landmarks_from_csv(filename, read_indexes_flipped=False, landmark_type='2d'):
+    def read_landmarks_from_csv(filename, landmark_type='2d'):
 
         with open(filename, newline='') as landmarks_file:
             landmark_reader = csv.reader(landmarks_file, delimiter=',', quotechar='|')
